@@ -21,7 +21,7 @@
 <div id = "intro-content">
   <div id = "info-content">
     <p>
-    Aditya 
+    Aditya
     <script>
     if(!( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
       document.write('Radhakrishnan');
@@ -42,7 +42,7 @@
      </style>
    </noscript>
 <script src="js/script.min.js"></script>
-  
+
 
 </div>
 <center>
@@ -72,12 +72,31 @@
     </p>
 
     <script>
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if(  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
      alert("For the best viewing and CSS experience, please view on a laptop or a desktop. You are on mobile.");
      document.write(`
-     <p class="grey-text text-darken-3 lighten-3">
-       I see you're using a mobile device. This website gets really messed up while using mobile, so some CSS-dependent content that's supposed to be here isn't available. I'd recommend you use a Desktop or a Laptop for a better experience.
-     </p>
+       <div class="carousel carousel-slider center" data-indicators="true">
+         <div class="carousel-item white-text" href="#one!" style="background-image: url('images/portfolio/modals/cubes.jpg');">
+           <h2>Cubes</h2>
+           <p class="white-text">Browser based 'Minecraft'. Free, Open Source, and Fun-ish. Now obselete.</p><br><br><br><br><br><br><br><br>
+           <a class="btn waves-effect white grey-text darken-text-2" href="http://cubes.eu5.org">Visit!</a>
+         </div>
+         <div class="carousel-item white-text" href="#two!" style="background-image: url('images/portfolio/modals/cdc.jpg');">
+           <h2>Coimbatore Drone Club</h2>
+           <p class="white-text">A club started by a few friends and I. Work in progress - we hope to start club activities soon!</p></p><br><br><br><br><br><br><br><br>
+           <a class="btn waves-effect white grey-text darken-text-2" href = "https://sites.google.com/site/droneclubcoimbatore/">Visit!</a>
+         </div>
+         <div class="carousel-item white-text" href="#three!" style="background-image: url('images/portfolio/modals/treepunch.jpg');">
+           <h2>TreePunch</h2>
+           <p class="white-text">A really old game I wrote several years ago. Super-Cringy. Now obselete. Written in QBasic.</p></p><br><br><br><br><br><br><br><br>
+           <a class="btn waves-effect white grey-text darken-text-2" href = "https://sites.google.com/site/greenmelongames/treepunch">Visit!</a>
+         </div>
+         <div class="carousel-item white-text" href="#four!" style="background-image: url('images/portfolio/modals/d2.png');">
+           <h2>Darwin</h2>
+           <p class="white-text">A browser-based chatbot I wrote for fun, to see what people would teach it to say. Written in php.</p></p><br><br><br><br><br><br><br><br>
+           <a class="btn waves-effect white grey-text darken-text-2" href = "http://darwin.eu5.org/">Visit!</a>
+         </div>
+       </div>
      `);
     }
     else {
@@ -181,6 +200,32 @@
         <a href="https://plus.google.com/109121220573089636109" class="collection-item">Google+</a>
       </div>
     </span></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">chat</i>Send a message</div>
+    <div class="collapsible-body">
+      <span>Say hello! Talk to me with this text box below. Mention your name if you want to. Don't spam pls.</span><br><br>
+      <div class="row">
+  <form class="col s12" method="POST" action="http://formspree.io/aditya.radhakrishnanbot@gmail.com">
+    <div class="row">
+      <div class="input-field col s6">
+  <i class="material-icons prefix">mail outline</i>
+  <input id="icon_prefix" type="email" class="validate" name="email">
+  <label for="icon_prefix">Your Email Address</label>
+</div></div>
+<div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">mode_edit</i>
+        <textarea id="icon_prefix2" class="materialize-textarea" name = "message"></textarea>
+        <label for="icon_prefix2">Message</label>
+      </div>
+    </div>
+  </form>
+</div>
+<button class="btn waves-effect waves-light" type="submit" name="action" onClick="alert('Your message has been sent.')">Send
+  <i class="material-icons right">send</i>
+</button>
+    </div>
   </li>
 </ul>
   </div>
