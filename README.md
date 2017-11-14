@@ -1,7 +1,5 @@
 # botperson.github.io
 
-My personal website. It's open-source, make whatever you want with it, just credit me and the libraries I've used.
+My personal website. It's open-source, do whatever you want with the code, just credit me and the libraries I've used.
 
 Enjoy.
-
-P.S. Don't take this a good example of how a README should look like.
