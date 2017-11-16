@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://smtpjs.com/v2/smtp.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </head>
 
@@ -206,7 +207,7 @@
     <div class="collapsible-body">
       <span>Say hello! Talk to me with this text box below. Mention your name if you want to. Don't spam pls.</span><br><br>
       <div class="row">
-  <form class="col s12" method="POST" action="http://formspree.io/aditya.radhakrishnanbot@gmail.com">
+  <form class="col s12">
     <div class="row">
       <div class="input-field col s6">
   <i class="material-icons prefix">mail outline</i>
@@ -222,9 +223,24 @@
     </div>
   </form>
 </div>
-<button class="btn waves-effect waves-light" type="submit" name="action" onClick="alert('Your message has been sent.')">Send
+<button class="btn waves-effect waves-light" type="submit" name="action" onClick="sendMessage">Send
   <i class="material-icons right">send</i>
 </button>
+<script>
+function sendMessage() {
+  var email = document.getElementById("icon_prefix").value;
+  var message = document.getElementById("icon_prefix2").value;
+  if (email == null || email == "") {
+    Materialize.toast('Please enter a valid email', 3000, 'rounded');
+  }
+  else if (message == null || message == "") {
+    Materialize.toast('Please enter a message', 3000, 'rounded');
+  }
+  else {
+    Email.send(email, "aditya.radhakrishnanbot@gmail.com", "Email from" + email, message, "smtp.gmail.com");
+  }
+}
+</script>
     </div>
   </li>
 </ul>
