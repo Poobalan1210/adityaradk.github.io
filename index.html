@@ -238,6 +238,7 @@ function sendMessage() {
   }
   else {
     Email.send(email, "aditya.radhakrishnanbot@gmail.com", "Email from" + email, message, "smtp.gmail.com");
+    Materialize.toast('Thanks! Your message has (hopefully) been sent!', 3000, 'rounded');
   }
 }
 </script>
