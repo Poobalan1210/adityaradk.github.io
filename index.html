@@ -17,6 +17,15 @@
   <script type="text/javascript" src="js/main.js"></script>
 </head>
 
+<script>
+var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+</script>
+
 <!-- particles.js container -->
 <div id = "intro-container">
 <div id = "intro-content">
@@ -73,13 +82,14 @@
     </p>
 
     <script>
+    /*
     if(  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
      alert("For the best viewing and CSS experience, please view on a laptop or a desktop. You are on mobile.");
      document.write(`
        <div class="carousel carousel-slider center" data-indicators="true">
          <div class="carousel-item white-text" href="#one!" style="background-image: url('images/portfolio/modals/cubes.jpg');">
            <h2>Cubes</h2>
-           <p class="white-text">Browser based 'Minecraft'. Free, Open Source, and Fun-ish. Now obselete.</p><br><br><br><br><br><br><br><br>
+           <p class="white-text">Browser based 'Minecraft'. Free, Open Source, and Fun-ish. Now obsolete.</p><br><br><br><br><br><br><br><br>
            <a class="btn waves-effect white grey-text darken-text-2" href="http://cubes.eu5.org">Visit!</a>
          </div>
          <div class="carousel-item white-text" href="#two!" style="background-image: url('images/portfolio/modals/cdc.jpg');">
@@ -89,7 +99,7 @@
          </div>
          <div class="carousel-item white-text" href="#three!" style="background-image: url('images/portfolio/modals/treepunch.jpg');">
            <h2>TreePunch</h2>
-           <p class="white-text">A really old game I wrote several years ago. Super-Cringy. Now obselete. Written in QBasic.</p></p><br><br><br><br><br><br><br><br>
+           <p class="white-text">A really old game I wrote several years ago. Super-Cringy. Now obsolete. Written in QBasic.</p></p><br><br><br><br><br><br><br><br>
            <a class="btn waves-effect white grey-text darken-text-2" href = "https://sites.google.com/site/greenmelongames/treepunch">Visit!</a>
          </div>
          <div class="carousel-item white-text" href="#four!" style="background-image: url('images/portfolio/modals/d2.png');">
@@ -110,7 +120,7 @@
             <span class="card-title">Cubes</span>
           </div>
           <div class="card-content">
-            <p>Browser based 'Minecraft'. Free, Open Source, and Fun-ish. Now obselete.</p>
+            <p>Browser based 'Minecraft'. Free, Open Source, and Fun-ish. Now obsolete.</p>
           </div>
           <div class="card-action">
             <a href="http://cubes.eu5.org/">Visit Page</a>
@@ -138,7 +148,7 @@
             <span class="card-title">TreePunch</span>
           </div>
           <div class="card-content">
-            <p>A really old game I wrote a few years ago. Super-Cringy. Now obselete. Written in QBasic.</p>
+            <p>A really old game I wrote a few years ago. Super-Cringy. Now obsolete. Written in QBasic.</p>
           </div>
           <div class="card-action">
             <a href="https://sites.google.com/site/greenmelongames/treepunch">Visit Page</a>
@@ -161,8 +171,96 @@
       </div>
     </div>
     `);}
+    */
 </script>
 
+<div class="row">
+  <div class="col s6 m4">
+            <div class="card sticky-action" style="overflow: hidden;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/portfolio/modals/cdc.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Coimbatore Drone Club<i class="material-icons right">more_vert</i></span>
+
+                <p>A club started by a few friends and I.</p>
+              </div>
+
+              <div class="card-action">
+                <a href="http://droneclub.cf/">Visit Site!</a>
+              </div>
+
+              <div class="card-reveal" style="display: block;">
+                <span class="card-title grey-text text-darken-4">Coimbatore Drone Club<i class="material-icons right">close</i></span>
+                <p>A club started be a few friends and I. We hosted Coimbatore's first drone race in December 2017, and we hope to do even more in the upcoming months. Join us - it's free and loads of fun.</p>
+              </div>
+            </div>
+    </div>
+    <div class="col s6 m4">
+              <div class="card sticky-action" style="overflow: hidden;">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/portfolio/modals/cubes.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Cubes<i class="material-icons right">more_vert</i></span>
+
+                  <p>A super-old obsolete Minecraft clone I made.</p>
+                </div>
+
+                <div class="card-action">
+                  <a href="http://cubes.eu5.org/">Visit Site!</a>
+                </div>
+
+                <div class="card-reveal" style="display: block;">
+                  <span class="card-title grey-text text-darken-4">Cubes<i class="material-icons right">close</i></span>
+                  <p>Browser based 'Minecraft'. Free, Open Source, and Fun-ish. Made it years ago. <b>Now obsolete.</b><br>It uses NodeJS. Please do not ask for support for this game - I'm not working on it anymore, and I've completely forgotten how my old code even works.</p>
+                </div>
+              </div>
+      </div>
+      <div class="col s6 m4">
+                <div class="card sticky-action" style="overflow: hidden;">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/portfolio/modals/treepunch.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">TreePunch<i class="material-icons right">more_vert</i></span>
+
+                    <p>A 2D lookalike of 'Minicraft'. Was made ages ago, and is now obsolete.</p>
+                  </div>
+
+                  <div class="card-action">
+                    <a href="https://sites.google.com/site/greenmelongames/treepunch">Visit Page</a>
+                  </div>
+
+                  <div class="card-reveal" style="display: block;">
+                    <span class="card-title grey-text text-darken-4">Cubes<i class="material-icons right">close</i></span>
+                    <p>A really old game I wrote a few years ago. Super-Cringy. Made it several years ago. <b>Now obsolete.</b><br><br>It was written in QBasic (in QB64), and is a 2D tile based Minecraft-like game, inspired, and quite uncreatively similar to Minicraft.</p>
+                  </div>
+                </div>
+        </div>
+        <div class="col s6 m4">
+                  <div class="card sticky-action" style="overflow: hidden;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/portfolio/modals/darwin.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Darwin<i class="material-icons right">more_vert</i></span>
+
+                      <p>A silly 'social experiment' chatbot I made years ago.</p>
+                    </div>
+
+                    <div class="card-action">
+                      <a href="http://darwin.eu5.org/">Visit Page</a>
+                    </div>
+
+                    <div class="card-reveal" style="display: block;">
+                      <span class="card-title grey-text text-darken-4">Cubes<i class="material-icons right">close</i></span>
+                      <p>A chatbot that 'learns' by storing user-given chat responses. Was written in php, and is <b>obsolete</b>.<br><br>I've been thinking about making another chatbot that uses Deep Learning (Artificial Neural Networks), called <i>Rosalind</i>, named after Rosalind Franklin. I haven't started working on <i>Rosalind</i> yet, and I may never start. I haven't gotten the motivation to make it.</p>
+                    </div>
+                  </div>
+          </div>
+
+</div>
 </div>
 
   <div class="row container">
@@ -172,14 +270,16 @@
     <div class="collapsible-header"><i class="material-icons">mail outline</i>Email</div>
     <div class="collapsible-body"><span>Here are a few emails you can use to contact me:<br><br>
       <ul class = "collection">
-        <li class="collection-item">aditya.radhakrishnanbot@gmail.com</li>
         <li class="collection-item">aditya.radk@gmail.com</li>
+        <li class="collection-item">aditya.radhakrishnanbot@gmail.com</li>
         <li class="collection-item">aditya.r.krishna@gmail.com</li>
         <li class="collection-item">botperson123@gmail.com</li>
         <li class="collection-item">aditya.radhakrishnan@yahoo.com</li>
       </ul>
       <br>
-      Phew! That's a long list!
+      Phew! That's a long list!<br>
+      Use the first email by default, and please refrain from sending an email to all my addresses.
+      </address>
     </span></div>
   </li>
   <li>
