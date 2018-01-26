@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet"                 href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
   <link rel="stylesheet"                 href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -17,17 +18,20 @@
   <script type="text/javascript" src="js/main.js"></script>
 </head>
 
-<script>
-var viewMode = getCookie("view-mode");
-if(viewMode == "desktop"){
-    viewport.setAttribute('content', 'width=1024');
-}else if (viewMode == "mobile"){
-    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
-}
-</script>
 
-<!-- particles.js container -->
 <div id = "intro-container">
+
+<center>
+  <div id = "scrolling">
+  <section id="scroll" class="demo">
+    <a href="#content.main"><span></span></a>
+  </section>
+  </div>
+</center>
+
+<div id="particles-js"></div>
+</div>
+
 <div id = "intro-content">
   <div id = "info-content">
     <p>
@@ -52,18 +56,6 @@ if(viewMode == "desktop"){
      </style>
    </noscript>
 <script src="js/script.min.js"></script>
-
-
-</div>
-<center>
-  <div id = "scrolling">
-  <section id="scroll" class="demo">
-    <a href="#content.main"><span></span></a>
-  </section>
-  </div>
-</center>
-
-<div id="particles-js"></div>
 </div>
 
 <!-- scripts -->
@@ -75,191 +67,103 @@ if(viewMode == "desktop"){
 
 <div class="section white">
   <div class="row container">
-    <h2 class="header">Projects & Other Stuff</h2>
-    <p class="grey-text text-darken-3 lighten-3">
-      Here's a list of random stuff - applications, games, clubs, etc.<br>
-      Click <a href = "projects.html">here</a> to view an entire list of miscellaneous stuff I've made.
+    <h2 class="header">Projects & More</h2>
+    <p class="flow-text">
+      A list of things I've done - including video games, school projects, presentations, contest submissions, and more. <br>
     </p>
 
-    <script>
-    /*
-    if(  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-     alert("For the best viewing and CSS experience, please view on a laptop or a desktop. You are on mobile.");
-     document.write(`
-       <div class="carousel carousel-slider center" data-indicators="true">
-         <div class="carousel-item white-text" href="#one!" style="background-image: url('images/portfolio/modals/cubes.jpg');">
-           <h2>Cubes</h2>
-           <p class="white-text">Browser based 'Minecraft'. Free, Open Source, and Fun-ish. Now obsolete.</p><br><br><br><br><br><br><br><br>
-           <a class="btn waves-effect white grey-text darken-text-2" href="http://cubes.eu5.org">Visit!</a>
-         </div>
-         <div class="carousel-item white-text" href="#two!" style="background-image: url('images/portfolio/modals/cdc.jpg');">
-           <h2>Coimbatore Drone Club</h2>
-           <p class="white-text">A club started by a few friends and I. Work in progress - we hope to start club activities soon!</p></p><br><br><br><br><br><br><br><br>
-           <a class="btn waves-effect white grey-text darken-text-2" href = "https://sites.google.com/site/droneclubcoimbatore/">Visit!</a>
-         </div>
-         <div class="carousel-item white-text" href="#three!" style="background-image: url('images/portfolio/modals/treepunch.jpg');">
-           <h2>TreePunch</h2>
-           <p class="white-text">A really old game I wrote several years ago. Super-Cringy. Now obsolete. Written in QBasic.</p></p><br><br><br><br><br><br><br><br>
-           <a class="btn waves-effect white grey-text darken-text-2" href = "https://sites.google.com/site/greenmelongames/treepunch">Visit!</a>
-         </div>
-         <div class="carousel-item white-text" href="#four!" style="background-image: url('images/portfolio/modals/d2.png');">
-           <h2>Darwin</h2>
-           <p class="white-text">A browser-based chatbot I wrote for fun, to see what people would teach it to say. Written in php.</p></p><br><br><br><br><br><br><br><br>
-           <a class="btn waves-effect white grey-text darken-text-2" href = "http://darwin.eu5.org/">Visit!</a>
-         </div>
-       </div>
-     `);
-    }
-    else {
-    document.write(`
-    <div class="row">
-      <div class="col s6 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/portfolio/modals/cubes.jpg">
-            <span class="card-title">Cubes</span>
-          </div>
-          <div class="card-content">
-            <p>Browser based 'Minecraft'. Free, Open Source, and Fun-ish. Now obsolete.</p>
-          </div>
-          <div class="card-action">
-            <a href="http://cubes.eu5.org/">Visit Page</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s6 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/portfolio/modals/cdc.jpg">
-            <span class="card-title">Coimbatore Drone Club</span>
-          </div>
-          <div class="card-content">
-            <p>A club started by a few friends and I. Work in progress - we hope to start club activities soon!</p>
-          </div>
-          <div class="card-action">
-            <a href="https://sites.google.com/site/droneclubcoimbatore/">Visit Page</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s6 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/portfolio/modals/treepunch.jpg">
-            <span class="card-title">TreePunch</span>
-          </div>
-          <div class="card-content">
-            <p>A really old game I wrote a few years ago. Super-Cringy. Now obsolete. Written in QBasic.</p>
-          </div>
-          <div class="card-action">
-            <a href="https://sites.google.com/site/greenmelongames/treepunch">Visit Page</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s6 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/portfolio/modals/darwin.png">
-            <span class="card-title">Darwin</span>
-          </div>
-          <div class="card-content">
-            <p>A browser-based chatbot I wrote for fun, to see what people would teach it to say. Written in php.</p>
-          </div>
-          <div class="card-action">
-            <a href="http://darwin.eu5.org/">Visit Page</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    `);}
-    */
-</script>
-
 <div class="row">
-  <div class="col s6 m4">
-            <div class="card sticky-action" style="overflow: hidden;">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/portfolio/modals/cdc.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Coimbatore Drone Club<i class="material-icons right">more_vert</i></span>
+    <table class="highlight bordered">
+      <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Initial Release Date</th>
+            <th>Latest revision</th>
+            <th>Link</th>
+        </tr>
+      </thead>
 
-                <p>A club started by a few friends and I.</p>
-              </div>
-
-              <div class="card-action">
-                <a href="http://droneclub.cf/">Visit Site!</a>
-              </div>
-
-              <div class="card-reveal" style="display: block;">
-                <span class="card-title grey-text text-darken-4">Coimbatore Drone Club<i class="material-icons right">close</i></span>
-                <p>A club started be a few friends and I. We hosted Coimbatore's first drone race in December 2017, and we hope to do even more in the upcoming months. Join us - it's free and loads of fun.</p>
-              </div>
-            </div>
-    </div>
-    <div class="col s6 m4">
-              <div class="card sticky-action" style="overflow: hidden;">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="images/portfolio/modals/cubes.jpg">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Cubes<i class="material-icons right">more_vert</i></span>
-
-                  <p>A super-old obsolete Minecraft clone I made.</p>
-                </div>
-
-                <div class="card-action">
-                  <a href="http://cubes.eu5.org/">Visit Site!</a>
-                </div>
-
-                <div class="card-reveal" style="display: block;">
-                  <span class="card-title grey-text text-darken-4">Cubes<i class="material-icons right">close</i></span>
-                  <p>Browser based 'Minecraft'. Free, Open Source, and Fun-ish. Made it years ago. <b>Now obsolete.</b><br>It uses NodeJS. Please do not ask for support for this game - I'm not working on it anymore, and I've completely forgotten how my old code even works.</p>
-                </div>
-              </div>
-      </div>
-      <div class="col s6 m4">
-                <div class="card sticky-action" style="overflow: hidden;">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/portfolio/modals/treepunch.jpg">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">TreePunch<i class="material-icons right">more_vert</i></span>
-
-                    <p>A 2D lookalike of 'Minicraft'. Was made ages ago, and is now obsolete.</p>
-                  </div>
-
-                  <div class="card-action">
-                    <a href="https://sites.google.com/site/greenmelongames/treepunch">Visit Page</a>
-                  </div>
-
-                  <div class="card-reveal" style="display: block;">
-                    <span class="card-title grey-text text-darken-4">Cubes<i class="material-icons right">close</i></span>
-                    <p>A really old game I wrote a few years ago. Super-Cringy. Made it several years ago. <b>Now obsolete.</b><br><br>It was written in QBasic (in QB64), and is a 2D tile based Minecraft-like game, inspired, and quite uncreatively similar to Minicraft.</p>
-                  </div>
-                </div>
-        </div>
-        <div class="col s6 m4">
-                  <div class="card sticky-action" style="overflow: hidden;">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="images/portfolio/modals/darwin.png">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Darwin<i class="material-icons right">more_vert</i></span>
-
-                      <p>A silly 'social experiment' chatbot I made years ago.</p>
-                    </div>
-
-                    <div class="card-action">
-                      <a href="http://darwin.eu5.org/">Visit Page</a>
-                    </div>
-
-                    <div class="card-reveal" style="display: block;">
-                      <span class="card-title grey-text text-darken-4">Cubes<i class="material-icons right">close</i></span>
-                      <p>A chatbot that 'learns' by storing user-given chat responses. Was written in php, and is <b>obsolete</b>.<br><br>I've been thinking about making another chatbot that uses Deep Learning (Artificial Neural Networks), called <i>Rosalind</i>, named after Rosalind Franklin. I haven't started working on <i>Rosalind</i> yet, and I may never start. I haven't gotten the motivation to make it.</p>
-                    </div>
-                  </div>
-          </div>
-
+      <tbody>
+        <tr>
+          <td>Personal Website rev3</td>
+          <td>The 3<sup>rd</sup> revision of my personal website</td>
+          <td>18/10/17</td>
+          <td>26/1/18</td>
+          <td><a href = "https://github.com/botperson/botperson.github.io">https://github.com/botperson/botperson.github.io</a></td>
+        </tr>
+        <tr>
+          <td>Nuclear Chemistry</td>
+          <td>A quick presentation on the fundamentals of Nuclear chemistry.</td>
+          <td>29/8/17</td>
+          <td>31/8/17</td>
+          <td><a href = "https://docs.google.com/presentation/d/1XNwJQOoFUuupxRLfginKSoHu1OHQjnsIE6L1k8afEys/edit?usp=sharing">https://docs.google.com/presentation/d/1XNwJQOoFUuupxRLfginKSoHu1OHQjnsIE6L1k8afEys/edit?usp=sharing</a></td>
+        </tr>
+        <tr>
+          <td>How to get to space!</td>
+          <td>A presentaion about rocket principles, design, and the fundamentals of orbital mechanics.</td>
+          <td>25/8/17</td>
+          <td>27/8/17</td>
+          <td><a href = "https://docs.google.com/presentation/d/1b366ti4NyPLoLMO8oMlO-gKuv-S6RuMtDr90TE4YPXw/edit?usp=sharing">https://docs.google.com/presentation/d/1b366ti4NyPLoLMO8oMlO-gKuv-S6RuMtDr90TE4YPXw/edit?usp=sharing</a></td>
+        </tr>
+        <tr>
+          <td>Robotics</td>
+          <td>A presentation on the basics of robotics and is an intro to LEGO Mindstorms</td>
+          <td>25/8/17</td>
+          <td>27/8/17</td>
+          <td><a href = "https://docs.google.com/presentation/d/15BNNsskVv2t96Gunqc1dP5-frjj_mUTQIEKcKXzS1Eg/edit?usp=sharing">https://docs.google.com/presentation/d/15BNNsskVv2t96Gunqc1dP5-frjj_mUTQIEKcKXzS1Eg/edit?usp=sharing</a></td>
+        </tr>
+        <tr>
+          <td>Orbitals</td>
+          <td>A short presentation on atomic orbitals.</td>
+          <td>13/8/17</td>
+          <td>14/8/17</td>
+          <td><a href = "https://docs.google.com/presentation/d/1Ev_XABDml9MiMC_Dh_dN3IPG-WfZbefORvhxrMLOjwo/edit?usp=sharing">https://docs.google.com/presentation/d/1Ev_XABDml9MiMC_Dh_dN3IPG-WfZbefORvhxrMLOjwo/edit?usp=sharing</a></td>
+        </tr>
+        <tr>
+          <td>The Standard Model</td>
+          <td>A short presentation on the Standard Model of particle physics, including a description of Quantum Field Theory.</td>
+          <td>13/8/17</td>
+          <td>14/8/17</td>
+          <td><a href = "https://docs.google.com/presentation/d/1MbI-rflQdp0cVClcHaX5K9EnODa1Yt0yVd4Az0MAFxg/edit?usp=sharing">https://docs.google.com/presentation/d/1MbI-rflQdp0cVClcHaX5K9EnODa1Yt0yVd4Az0MAFxg/edit?usp=sharing</a></td>
+        </tr>
+        <tr>
+          <td>Kinematic Equations</td>
+          <td>A funny worksheet with simple problems on velocity, speed and kinematic equations.</td>
+          <td>22/6/17</td>
+          <td>22/6/17</td>
+          <td><a href = "https://docs.google.com/document/d/1Q0JyvkgupEk9g1_wo3vghZlqGrpTXx3M9zWBDQdkoUg/edit?usp=sharing">https://docs.google.com/document/d/1Q0JyvkgupEk9g1_wo3vghZlqGrpTXx3M9zWBDQdkoUg/edit?usp=sharing</a></td>
+        </tr>
+        <tr>
+          <td>Darwin</td>
+          <td>A 'social-experiment' chatbot that people can teach what to say. Was created only to see what people would teach it. Now obsolete</td>
+          <td>26/1/17</td>
+          <td>26/1/17</td>
+          <td><a href = "http://darwin.eu5.org/">http://darwin.eu5.org/</a></td>
+        </tr>
+        <tr>
+          <td>Cubes</td>
+          <td>Browser-based 'Minecraft'. Is no longer in development, and is hence obsolete.</td>
+          <td>??/??/16</td>
+          <td>??/??/16</td>
+          <td><a href = "http://cubes.eu5.org/">http://cubes.eu5.org/</a></td>
+        </tr>
+        <tr>
+          <td>TreePunch</td>
+          <td>A 2D tile-based game I made a long time ago. Inspired by 'Minicraft'. Now obsolete.</td>
+          <td>??/??/15</td>
+          <td>??/??/15</td>
+          <td><a href = "https://sites.google.com/site/greenmelongames/treepunch/">https://sites.google.com/site/greenmelongames/treepunch</a></td>
+        </tr>
+        <tr>
+          <td>Orion</td>
+          <td>My submission for the NASA Ames Space Settlement contest in 2015.</td>
+          <td>??/??/14</td>
+          <td>1/1/15</td>
+          <td><a href = "https://docs.google.com/document/d/1run9J2aJpDemx8HwhM8J9KjeoOTMpfkEq1B0dDPR2iY/edit?usp=sharing">https://docs.google.com/document/d/1run9J2aJpDemx8HwhM8J9KjeoOTMpfkEq1B0dDPR2iY/edit?usp=sharing</a></td>
+        </tr>
+      </tbody>
+    </table>
 </div>
 </div>
 
@@ -270,7 +174,7 @@ if(viewMode == "desktop"){
     <div class="collapsible-header"><i class="material-icons">mail outline</i>Email</div>
     <div class="collapsible-body"><span>Here are a few emails you can use to contact me:<br><br>
       <ul class = "collection">
-        <li class="collection-item">aditya.radk@gmail.com</li>
+        <li class="collection-item">adityaradk@gmail.com</li>
         <li class="collection-item">aditya.radhakrishnanbot@gmail.com</li>
         <li class="collection-item">aditya.r.krishna@gmail.com</li>
         <li class="collection-item">botperson123@gmail.com</li>
@@ -302,50 +206,6 @@ if(viewMode == "desktop"){
       </div>
     </span></div>
   </li>
-  <!--
-  <li>
-    <div class="collapsible-header"><i class="material-icons">chat</i>Send a message</div>
-    <div class="collapsible-body">
-      <span>Say hello! Talk to me with this text box below. Mention your name if you want to. Don't spam pls.</span><br><br>
-      <div class="row">
-  <form class="col s12">
-    <div class="row">
-      <div class="input-field col s6">
-  <i class="material-icons prefix">mail outline</i>
-  <input id="icon_prefix" type="email" class="validate" name="email">
-  <label for="icon_prefix">Your Email Address</label>
-</div></div>
-<div class="row">
-      <div class="input-field col s6">
-        <i class="material-icons prefix">mode_edit</i>
-        <textarea id="icon_prefix2" class="materialize-textarea" name = "message"></textarea>
-        <label for="icon_prefix2">Message</label>
-      </div>
-    </div>
-  </form>
-</div>
-<button class="btn waves-effect waves-light" type="submit" name="action" onClick="sendMessage();">Send
-  <i class="material-icons right">send</i>
-</button>
-<script>
-function sendMessage() {
-  var email = document.getElementById("icon_prefix").value;
-  var message = document.getElementById("icon_prefix2").value;
-  if (email == null || email == "") {
-    Materialize.toast('Please enter a valid email', 3000, 'rounded');
-  }
-  else if (message == null || message == "") {
-    Materialize.toast('Please enter a message', 3000, 'rounded');
-  }
-  else {
-    Email.send(email, "aditya.radhakrishnanbot@gmail.com", "Email from" + email, message, "smtp.gmail.com");
-    Materialize.toast('Thanks! Your message has (hopefully) been sent!', 3000, 'rounded');
-  }
-}
-</script>
-    </div>
-  </li>
--->
 </ul>
   </div>
 
@@ -353,7 +213,7 @@ function sendMessage() {
 
 </body>
 
-<footer class="page-footer">
+<footer class="page-footer" id ="TheFooter">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
@@ -371,7 +231,7 @@ function sendMessage() {
       </div>
     </div>
   </div>
-  <div class="footer-copyright">
+  <div class="footer-copyright" id="FooterBase">
     <div class="container">
     © 2018 Aditya Radhakrishnan
     <a class="grey-text text-lighten-4 right" href="https://github.com/botperson/botperson.github.io">View Source Code</a>
