@@ -39,14 +39,11 @@
     if(!( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
       document.write('Radhakrishnan');
     }
-    else {
-       alert("I see you're using a mobile device - some stuff on this website break on small screens. Try using a desktop, tablet, or laptop instead. If you insist on using a small screen, try landscape mode.");
-    }
     </script>
     </p>
   </div>
   <div id="transform-content">
-  <div>That's me.</div>
+  <div>Scroll Down</div>
   <span class="fu"></span>
   </div>
    <noscript>
@@ -80,8 +77,14 @@
         <tr>
             <th>Name</th>
             <th>Description</th>
+            <script>
+            if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+            document.write(`
             <th>Initial Release Date</th>
             <th>Latest revision</th>
+            `);
+            }
+            </script>
             <th>Link</th>
         </tr>
       </thead>
@@ -90,98 +93,149 @@
         <tr>
           <td>Personal Website rev3</td>
           <td>The 3<sup>rd</sup> revision of my personal website</td>
+          <script>
+          if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+          document.write(`
           <td>18/10/17</td>
-          <td>26/1/18</td>
-          <td><a href = "https://github.com/botperson/botperson.github.io">https://github.com/botperson/botperson.github.io</a></td>
+          <td>14/4/18</td>
+          `);
+          }
+          </script>
+          <td><a class="btn-floating btn-large waves-effect waves-light red" href = "https://github.com/botperson/botperson.github.io"><i class="material-icons">link</i></a></td>
         </tr>
         <tr>
           <td>Nuclear Chemistry</td>
           <td>A quick presentation on the fundamentals of Nuclear chemistry created as a school project.</td>
+          <script>
+          if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+          document.write(`
           <td>29/8/17</td>
           <td>31/8/17</td>
-          <td><a href = "https://docs.google.com/presentation/d/1XNwJQOoFUuupxRLfginKSoHu1OHQjnsIE6L1k8afEys/edit?usp=sharing">https://docs.google.com/presentation/d/1XNwJQOoFUuupxRLfginKSoHu1OHQjnsIE6L1k8afEys/edit?usp=sharing</a></td>
+          `);
+          }
+          </script>
+          <td><a class="btn-floating btn-large waves-effect waves-light green" href = "https://docs.google.com/presentation/d/1XNwJQOoFUuupxRLfginKSoHu1OHQjnsIE6L1k8afEys/edit?usp=sharing"><i class="material-icons">view_compact</i></a></td>
         </tr>
         <tr>
           <td>How to get to space!</td>
           <td>A presentaion about rocket principles, design, and the fundamentals of orbital mechanics created for elementary school children.</td>
+          <script>
+          if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+          document.write(`
           <td>25/8/17</td>
           <td>27/8/17</td>
-          <td><a href = "https://docs.google.com/presentation/d/1b366ti4NyPLoLMO8oMlO-gKuv-S6RuMtDr90TE4YPXw/edit?usp=sharing">https://docs.google.com/presentation/d/1b366ti4NyPLoLMO8oMlO-gKuv-S6RuMtDr90TE4YPXw/edit?usp=sharing</a></td>
+          `);
+          }
+          </script>
+          <td><a class="btn-floating btn-large waves-effect waves-light green" href = "https://docs.google.com/presentation/d/1b366ti4NyPLoLMO8oMlO-gKuv-S6RuMtDr90TE4YPXw/edit?usp=sharing"><i class="material-icons">view_compact</i></a></td>
         </tr>
         <tr>
           <td>Robotics</td>
           <td>A presentation on the basics of robotics (is also an intro to LEGO Mindstorms) created for elementary school children.</td>
+          <script>
+          if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+          document.write(`
           <td>25/8/17</td>
           <td>27/8/17</td>
-          <td><a href = "https://docs.google.com/presentation/d/15BNNsskVv2t96Gunqc1dP5-frjj_mUTQIEKcKXzS1Eg/edit?usp=sharing">https://docs.google.com/presentation/d/15BNNsskVv2t96Gunqc1dP5-frjj_mUTQIEKcKXzS1Eg/edit?usp=sharing</a></td>
+          `);
+          }
+          </script>
+          <td><a class="btn-floating btn-large waves-effect waves-light green" href = "https://docs.google.com/presentation/d/15BNNsskVv2t96Gunqc1dP5-frjj_mUTQIEKcKXzS1Eg/edit?usp=sharing"><i class="material-icons">view_compact</i></a></td>
         </tr>
         <tr>
           <td>Orbitals</td>
           <td>A short presentation on atomic orbitals created as a school project.</td>
+          <script>
+          if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+          document.write(`
           <td>13/8/17</td>
           <td>14/8/17</td>
-          <td><a href = "https://docs.google.com/presentation/d/1Ev_XABDml9MiMC_Dh_dN3IPG-WfZbefORvhxrMLOjwo/edit?usp=sharing">https://docs.google.com/presentation/d/1Ev_XABDml9MiMC_Dh_dN3IPG-WfZbefORvhxrMLOjwo/edit?usp=sharing</a></td>
+          `);
+          }
+          </script>
+          <td><a class="btn-floating btn-large waves-effect waves-light green" href = "https://docs.google.com/presentation/d/1Ev_XABDml9MiMC_Dh_dN3IPG-WfZbefORvhxrMLOjwo/edit?usp=sharing"><i class="material-icons">view_compact</i></a></td>
         </tr>
         <tr>
           <td>The Standard Model</td>
           <td>A short presentation on the Standard Model of particle physics, including a description of Quantum Field Theory, created as a school project.</td>
+          <script>
+          if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+          document.write(`
           <td>13/8/17</td>
           <td>14/8/17</td>
-          <td><a href = "https://docs.google.com/presentation/d/1MbI-rflQdp0cVClcHaX5K9EnODa1Yt0yVd4Az0MAFxg/edit?usp=sharing">https://docs.google.com/presentation/d/1MbI-rflQdp0cVClcHaX5K9EnODa1Yt0yVd4Az0MAFxg/edit?usp=sharing</a></td>
+          `);
+          }
+          </script>
+          <td><a class="btn-floating btn-large waves-effect waves-light green" href = "https://docs.google.com/presentation/d/1MbI-rflQdp0cVClcHaX5K9EnODa1Yt0yVd4Az0MAFxg/edit?usp=sharing"><i class="material-icons">view_compact</i></a></td>
         </tr>
         <tr>
           <td>Kinematic Equations</td>
           <td>A funny worksheet with simple problems on velocity, speed and kinematic equations created as a school project.</td>
+          <script>
+          if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+          document.write(`
           <td>22/6/17</td>
           <td>22/6/17</td>
-          <td><a href = "https://docs.google.com/document/d/1Q0JyvkgupEk9g1_wo3vghZlqGrpTXx3M9zWBDQdkoUg/edit?usp=sharing">https://docs.google.com/document/d/1Q0JyvkgupEk9g1_wo3vghZlqGrpTXx3M9zWBDQdkoUg/edit?usp=sharing</a></td>
+          `);
+          }
+          </script>
+          <td><a class="btn-floating btn-large waves-effect waves-light blue" href = "https://docs.google.com/document/d/1Q0JyvkgupEk9g1_wo3vghZlqGrpTXx3M9zWBDQdkoUg/edit?usp=sharing"><i class="material-icons">description</i></a></td>
         </tr>
         <tr>
           <td>Darwin</td>
           <td>A 'social-experiment' chatbot that people can teach what to say. Was created only to see what people would teach it. Now obsolete</td>
+          <script>
+          if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+          document.write(`
           <td>26/1/17</td>
           <td>26/1/17</td>
-          <td><a href = "http://darwin.eu5.org/">http://darwin.eu5.org/</a></td>
+          `);
+          }
+          </script>
+          <td><a class="btn-floating btn-large waves-effect waves-light red" href = "http://darwin.eu5.org/"><i class="material-icons">link</i></a></td>
         </tr>
         <tr>
           <td>Cubes</td>
           <td>Browser-based 'Minecraft'. Is no longer in development, and is hence obsolete.</td>
+          <script>
+          if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+          document.write(`
           <td>??/??/16</td>
           <td>??/??/16</td>
-          <td><a href = "http://cubes.eu5.org/">http://cubes.eu5.org/</a></td>
+          `);
+          }
+          </script>
+          <td><a class="btn-floating btn-large waves-effect waves-light red" href = "http://cubes.eu5.org/"><i class="material-icons">link</i></a></td>
         </tr>
         <tr>
           <td>TreePunch</td>
           <td>A 2D tile-based game I made a long time ago. Inspired by 'Minicraft'. Now obsolete.</td>
+          <script>
+          if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+          document.write(`
           <td>??/??/15</td>
           <td>??/??/15</td>
-          <td><a href = "https://sites.google.com/site/greenmelongames/treepunch/">https://sites.google.com/site/greenmelongames/treepunch</a></td>
+          `);
+          }
+          </script>
+          <td><a class="btn-floating btn-large waves-effect waves-light red" href = "https://sites.google.com/site/greenmelongames/treepunch"><i class="material-icons">link</i></a></td>
         </tr>
         <tr>
           <td>Orion</td>
           <td>My submission for the NASA Ames Space Settlement contest in 2015. Was made when I was in sixth grade.</td>
+          <script>
+          if(! ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
+          document.write(`
           <td>??/??/14</td>
           <td>1/1/15</td>
-          <td><a href = "https://docs.google.com/document/d/1run9J2aJpDemx8HwhM8J9KjeoOTMpfkEq1B0dDPR2iY/edit?usp=sharing">https://docs.google.com/document/d/1run9J2aJpDemx8HwhM8J9KjeoOTMpfkEq1B0dDPR2iY/edit?usp=sharing</a></td>
+          `);
+          }
+          </script>
+          <td><a class="btn-floating btn-large waves-effect waves-light blue" href = "https://docs.google.com/document/d/1run9J2aJpDemx8HwhM8J9KjeoOTMpfkEq1B0dDPR2iY/edit?usp=sharing"><i class="material-icons">description</i></a></td>
         </tr>
       </tbody>
     </table>
     <br>
-
-  <div class="card horizontal">
-    <div class="card-image">
-      <img src="images/portfolio/modals/cdc.jpg">
-    </div>
-    <div class="card-stacked">
-      <div class="card-content">
-        <h4 class="header">Coimbatore Drone Club</h4>
-        <p class="flow-text">A club started by a few friends and I. We recently hosted Coimbatore's first drone race, and we're planning to go even further, hosting more events and races.</p>
-      </div>
-      <div class="card-action">
-        <a href="http://droneclub.cf/">Visit our website!</a>
-      </div>
-    </div>
-  </div>
 
 </div>
 </div>
